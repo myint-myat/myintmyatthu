@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/rose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@drawable/rounded_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="371dp"
+            tools:context=".MainActivity">
+
+        <TextView android:id="@+id/txt_love"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  android:textColor="#2C046F"
+                  android:textSize="25sp"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="40dp"
+                  android:text="MY LOVE"
+        />
+
+        <TextView android:id="@+id/txt_flower"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintTop_toBottomOf="@id/txt_love"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  android:layout_marginLeft="40dp"
+                  android:textSize="25sp"
+                  android:textColor="#2C046F"
+                  android:text="YOU LIKE A FLOWER"
+        />
+
+        <ImageView android:id="@+id/img_star"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/star"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="40dp"
+                   app:layout_constraintTop_toBottomOf="@id/txt_flower"/>
+
+        <TextView android:id="@+id/txt_choice"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintTop_toBottomOf="@id/txt_flower"
+                  app:layout_constraintLeft_toLeftOf="@id/img_star"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="30dp"
+                  android:text="Editor's Choice"
+        />
+
+        <TextView android:id="@+id/txt_text"
+                  android:layout_width="345dp"
+                  android:layout_height="93dp"
+                  app:layout_constraintTop_toBottomOf="@id/txt_choice"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="40dp"
+                  android:layout_marginRight="20dp"
+                  android:textColor="#0A21DF"
+                  android:text="We're all a little weired.And life is a little weired.And when we find someone whose weirdness is compatible with ours,we join up with them and fall into mutually satisfying weirdness and call it love true love."
+                  app:layout_constraintHorizontal_bias="0.243"/>
+
+        <TextView android:id="@+id/txt_txt1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintTop_toBottomOf="@id/txt_text"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  android:layout_marginLeft="40dp"
+                  android:textColor="#0A21DF"
+                  android:text="And in this crazy life and through these."/>
+
+        <TextView android:id="@+id/txt_value" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintTop_toBottomOf="@id/txt_txt1"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  android:layout_marginLeft="40dp"
+                  android:layout_marginTop="30dp"
+                  android:textColor="#041DA7"
+                  android:textSize="20sp"
+                  android:text="$ 99.9"
+        />
+
+        <Button android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_txt1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_btn"
+                android:text="order now"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
